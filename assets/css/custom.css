@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'eastman';
+  src: url('../font/EastmanRomanTrial-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4{
+  font-family: 'eastman', sans-serif !important;
+  font-size: 50px !important;
+  color: #183763 !important;
+}
+
+h1,
+h4,
+.banner-destaque h2{
+  font-size: 16px !important;
+}
+
+h2{
+  font-size: 36px !important;
+}
+
+h3{
+  font-size: 26px !important;
+  font-weight: 100 !important;
+}
+
+p, small, li, a, span, label, input, button, table{
+  font-family: 'inter', sans-serif !important;
+  line-height: 150% !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: #4E4D4D !important;
+}
+
+.navbar.scrolled{
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+  padding: 0 1rem !important;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link{
+  padding: 0 1.2rem !important;
+}
+
+.banner {
+  background-image: url('./../img/banner2.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.rounded{
+  border-radius: 60px 0 60px 0 !important;
+}
+
+.banner-destaque .rounded{
+  border-radius: 60px 60px 0 0 !important;
+}
+
+.blur{
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.banner-destaque .cards {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* .banner-destaque .cards a{
+  padding-top: 1.7rem !important;
+  padding-bottom: 1.7rem !important;
+} */
+
+.banner-destaque .cards .icon,
+.banner-destaque .cards .icon1,
+.banner-destaque .cards .icon2{
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: 48px;
+  margin: 0 auto;
+}
+
+.banner-destaque .cards .icon{
+  background-image: url(./../img/musculacao.svg);
+}
+
+.banner-destaque .cards a:hover div.icon{
+  background-image: url(./../img/musculacao-dourado.svg);
+}
+
+.banner-destaque .cards .icon1{
+  background-image: url(./../img/artes-marciais.svg);
+}
+
+.banner-destaque .cards a:hover div.icon1{
+  background-image: url(./../img/artes-marciais-dourado.svg);
+}
+
+.banner-destaque .cards .icon2{
+  background-image: url(./../img/kangoo.svg);
+}
+
+.banner-destaque .cards a:hover div.icon2{
+  background-image: url(./../img/kangoo-dourado.svg);
+}
+
+.banner-destaque .cards a:hover h2{
+  color: #8B7323 !important;
+}
+
+.destaques {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.btn{
+  background-color: #B79D45;
+  border: #B79D45;
+  color: white !important;
+}
+
+.btn:hover{
+  background-color: #8B7323;
+  border: #8B7323;
+}
+
+.text-primary{
+  color: #B79D45 !important;
+}
+
+/* */
+.musculacao{
+  background-image: url(./../img/background-musculacao.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -140px;
+}
+
+.img-top{
+  padding: .25rem!important;
+  margin-top: -184px !important;
+}
+
+/**/
+.equipe{
+  background-color: #FBFAF6;
+}
+
+.equipe-box{
+  background-image: url(./../img/background-team.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.equipe-box .item{
+  width: 360px;
+}
+
+.services .rounded,
+.contact .rounded{
+  border-radius: 10px !important;
+}
+
+/**/
+.filter{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.services .nav-link:hover,
+.services .nav-link.active{
+    border-bottom: 1px solid #808080;
+}
+
+.contact{
+  background-color: #FBFAF6;
+}
+
+.contact h3{
+  color: #4E4D4D !important;
+}
+
+.sobre .background{
+  z-index: -1;
+  width: 100%;
+  height: 88px;
+  background-color: #FBFAF6;
+  position: absolute;
+  bottom: initial;
+  margin-top: -60px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.table>:not(caption)>*>*{
+  background-color: transparent;
+}
+
+.kangoo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.kangoo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* imagens maiores */
+.kangoo-grid .big {
+  grid-row: span 2;
+}
+
+/* imagens menores */
+.kangoo-grid .small {
+  grid-row: span 1;
+}
+
+.proprietaria img{
+  width: 45%;
+}
+
+@media (max-width: 1200px) {
+  .offcanvas{
+    background-color: #4E4D4D !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .kangoo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .w-sm-100{
+    width: 100% !important;
+  }
+
+  .destaques{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proprietaria .position-absolute{
+    position: relative !important;
+  }
+
+  .proprietaria img{
+    width: 100%;
+  }
+
+  .equipe-box .item{
+    width: 45%;
+  }
+
+  .equipe-box{
+    gap: 16px !important;
+  }
+
+  .services .g-4{
+    gap: 0;
+    row-gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .mobile-w-50{
+    width: 50% !important;
+  }
+
+  .mobile-text-center{
+    text-align: center;
+  }
+}
