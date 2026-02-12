@@ -41,14 +41,31 @@ p, small, li, a, span, label, input, button, table{
 .nav-link {
   color: #FFFFFF !important;
   padding: 0 1rem !important;
+  position: relative;
+  text-decoration: none;
+  color: white; /* ajuste se necessário */
+  font-weight: 500;
+  padding-bottom: 5px;
 }
 
-.navbar-expand-xl .navbar-nav .nav-link{
-  padding: 0 1.2rem !important;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #CECECE;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+  width: 95%;
 }
 
 .banner {
-  background-image: url('./../img/banner2.png');
+  background-image: url('./../img/banner2.webp');
   background-size: cover;
   min-height: 100vh;
 }
@@ -124,6 +141,8 @@ p, small, li, a, span, label, input, button, table{
   background-color: #B79D45;
   border: #B79D45;
   color: white !important;
+  animation: pulse 2s infinite;
+  transition: 0.3s;
 }
 
 .btn:hover{
@@ -137,7 +156,7 @@ p, small, li, a, span, label, input, button, table{
 
 /* */
 .musculacao{
-  background-image: url(./../img/background-musculacao.png);
+  background-image: url(./../img/background-musculacao.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -140px;
@@ -154,7 +173,7 @@ p, small, li, a, span, label, input, button, table{
 }
 
 .equipe-box{
-  background-image: url(./../img/background-team.png);
+  background-image: url(./../img/background-team.webp);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -188,6 +207,10 @@ p, small, li, a, span, label, input, button, table{
 
 .contact h3{
   color: #4E4D4D !important;
+}
+
+.contact a:hover{
+  color: #8B7323 !important;
 }
 
 .sobre .background{
@@ -232,12 +255,6 @@ a{
 
 .proprietaria img{
   width: 45%;
-}
-
-@media (max-width: 1200px) {
-  .offcanvas{
-    background-color: #4E4D4D !important;
-  }
 }
 
 /* Tablet */
