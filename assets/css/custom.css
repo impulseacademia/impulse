@@ -309,3 +309,13 @@ a{
     text-align: center;
   }
 }
+
+
+footer {
+  background: #061428;
+}
+
+footer a:hover{
+  opacity: 1 !important;
+  text-decoration: underline;
+}
