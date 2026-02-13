@@ -151,7 +151,7 @@ p, small, li, a, span, label, input, button, table{
 }
 
 .text-primary{
-  color: #B79D45 !important;
+  color: #847634 !important;
 }
 
 /* */
@@ -290,6 +290,12 @@ a{
   .services .g-4{
     gap: 0;
     row-gap: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .mobile-w-50{
+    width: auto !important;
   }
 }
 
